@@ -1,11 +1,35 @@
+/* Global styles */
+
+/* Accent color used across the site (pastel pink) */
+:root {
+  --color-accent: oklch(80% 35% 350);
+  accent-color: var(--color-accent);
+}
+
 body {
   /* Set line height to 1.5 times the font size
      and use the OS's UI font as the website font
    */
   font: 100%/1.5 system-ui;
   max-width: 100ch;
+  /* Center content, with at least 1em of space on the sides */
   margin-inline: max(1em, (100% - 100ch) / 2);
 }
+
+
+/* Headings */
+
+h1 {
+  font-size: 400%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+
+/* Navigation bar */
 
 nav {
   display: flex;
@@ -21,26 +45,27 @@ nav a {
   padding: 0.5em;
 }
 
+/* Gray bar under the current page's link */
 nav a.current {
   border-bottom: 0.4em solid oklch(80% 3% 200);
   padding-bottom: 0.1em;
 }
 
-:root {
-  --color-accent: oklch(80% 35% 350);
-  accent-color: var(--color-accent);
-}
-
+/* Pink bar and background on hover */
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.1em;
   background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
+
+/* Contact form */
+
 input, textarea, button {
   font: inherit;
 }
 
+/* Labels on the left, inputs on the right */
 form {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -57,12 +82,17 @@ form button {
   grid-column: 1 / -1;
 }
 
+
+/* Projects page */
+
+/* As many columns as fit, each at least 15em wide */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 1em;
 }
 
+/* Subgrid keeps headings and images lined up across cards */
 .projects article {
   display: grid;
   grid-template-rows: subgrid;
@@ -73,11 +103,58 @@ form button {
   margin: 0;
 }
 
-h1 {
-  font-size: 400%;
+
+/* Resume page */
+
+section {
+  margin-block: 2em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  text-wrap: balance;
+section h2 {
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.2em;
+}
+
+section article {
+  margin-block: 1.5em;
+}
+
+/* Title on the left, date on the right (wraps on small screens) */
+article header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0 1em;
+}
+
+article header h3,
+article header p {
+  margin: 0;
+}
+
+article header p {
+  color: oklch(50% 0 0);
+  font-size: 90%;
+}
+
+article header a {
+  color: inherit;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 2px;
+}
+
+/* Skills as pink bubbles */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background-color: oklch(from var(--color-accent) 95% 5% h);
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
 }
