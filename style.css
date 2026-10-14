@@ -1,4 +1,7 @@
 /* Global styles */
+html {
+  color-scheme: light dark;
+}
 
 /* Accent color used across the site (pastel pink) */
 :root {
@@ -23,7 +26,12 @@ h1 {
   font-size: 400%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.1;
   text-wrap: balance;
 }
@@ -32,9 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Navigation bar */
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: 1em;
-  border-bottom: 1px solid oklch(80% 3% 200);
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -47,7 +56,7 @@ nav a {
 
 /* Gray bar under the current page's link */
 nav a.current {
-  border-bottom: 0.4em solid oklch(80% 3% 200);
+  border-bottom: 0.4em solid var(--border-color);
   padding-bottom: 0.1em;
 }
 
@@ -55,13 +64,16 @@ nav a.current {
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.1em;
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 
 /* Contact form */
 
-input, textarea, button {
+input,
+textarea,
+button,
+select {
   font: inherit;
 }
 
@@ -157,4 +169,21 @@ article header a {
   background-color: oklch(from var(--color-accent) 95% 5% h);
   padding: 0.25em 0.75em;
   border-radius: 1em;
+}
+
+/* Theme switcher in the top right corner */
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
+
+/* On narrow windows, put the theme switcher above the nav instead of on top of it */
+@media (max-width: 60em) {
+  .color-scheme {
+    position: static;
+    display: block;
+    text-align: right;
+  }
 }
