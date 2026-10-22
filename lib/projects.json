@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Lab 4: Dynamic Projects & GitHub Stats",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Loaded my project list from a JSON file with reusable JavaScript functions, and displayed live data from the GitHub API on my home page."
+  },
+  {
+    "title": "Lab 3: Interactive Navigation & Theme Switcher",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Used JavaScript to build an automatic navigation menu, a light/dark theme switcher that remembers your choice, and a working contact form."
+  },
+  {
+    "title": "Lab 2: Styling My Portfolio with CSS",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Designed the layout and look of my portfolio site with CSS, including a projects grid and a styled navigation bar."
+  },
+  {
+    "title": "Lab 1: Building My Personal Site",
+    "year": 2026,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Created the HTML structure for my personal website and portfolio, and published it with GitHub Pages."
+  },
+  {
+    "title": "Eaque accusantium quis sunt!",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Dicta, quia reprehenderit voluptas assumenda odio accusantium nam! Illum tenetur maiores quas incidunt? Magnam, non sunt. Rem sequi consectetur non deleniti quo ab eaque et sapiente? Iusto doloremque officiis itaque."
+  },
+  {
+    "title": "Quo incidunt alias a?",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Dolores ea nihil sint inventore voluptatem fuga asperiores dolore esse tempora illum, aperiam ipsum. Sunt quisquam amet consectetur recusandae, dolores deserunt et nulla, nesciunt minus suscipit perferendis ducimus quia enim."
+  },
+  {
+    "title": "Eum sunt nemo incidunt?",
+    "year": 2025,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Eius, facilis facere? Voluptas modi, deleniti nobis adipisci, sit obcaecati tenetur quos temporibus animi nam illo eum exercitationem dolore delectus ratione qui! Perspiciatis, ex atque adipisci ratione eius iste? Quidem!"
+  },
+  {
+    "title": "Optio magnam aperiam nobis?",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Deleniti accusantium mollitia quidem quam dolorem ut deserunt quod! Praesentium nemo ullam impedit eos! Sequi fugiat vitae, molestias distinctio in sed omnis temporibus maxime ducimus illum! Laboriosam animi rem quasi."
+  },
+  {
+    "title": "Assumenda eius voluptatem esse.",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Reprehenderit, deleniti minima velit perferendis provident itaque qui. Eligendi, cupiditate labore! Expedita, totam necessitatibus, deserunt doloribus voluptatibus quam animi vel consequuntur non voluptate quaerat nihil ipsa eveniet, praesentium aspernatur odio!"
+  },
+  {
+    "title": "Eum ratione iusto perspiciatis.",
+    "year": 2024,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Debitis quasi fuga deleniti corporis sapiente maxime aut similique animi libero, atque, quidem soluta incidunt nemo cum repudiandae harum doloribus et eius totam vel veritatis sit, placeat fugiat dolore? Ad!"
+  },
+  {
+    "title": "Repellat distinctio aspernatur recusandae?",
+    "year": 2023,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Omnis blanditiis eveniet voluptatum delectus nulla natus, molestias magnam officiis amet illo dolores quia provident odit ea molestiae excepturi animi. Dicta est temporibus debitis natus recusandae fugit eaque maxime ipsum."
+  },
+  {
+    "title": "At optio ratione reprehenderit?",
+    "year": 2023,
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Repellat, suscipit sapiente iure eaque nemo blanditiis totam qui fuga eum rerum similique sunt laudantium maxime quae explicabo tenetur, et hic corrupti officia aliquid culpa voluptatum facere. Fuga, maiores numquam."
+  }
+]
