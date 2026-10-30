@@ -124,8 +124,10 @@ form button {
   }
 
   path {
-    transition: 300ms; /* smooth fade instead of an instant jump */
-    cursor: pointer;   /* shows the slices are clickable */
+    transition: 300ms;
+    /* smooth fade instead of an instant jump */
+    cursor: pointer;
+    /* shows the slices are clickable */
   }
 }
 
