@@ -104,6 +104,77 @@ form button {
   gap: 1em;
 }
 
+.project-year {
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  color: gray;
+  margin-top: 0;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+
+  /* when any slice is hovered, fade out all the other slices */
+  &:has(path:hover) {
+    path:not(:hover) {
+      opacity: 0.5;
+    }
+  }
+
+  path {
+    transition: 300ms; /* smooth fade instead of an instant jump */
+    cursor: pointer;   /* shows the slices are clickable */
+  }
+}
+
+/* highlight color for the selected slice and its legend item */
+.selected {
+  /* !important beats the --color set in each <li>'s style attribute */
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+/* pie on the left, legend on the right */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+/* legend items in a grid that fills the available width */
+.legend {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  padding: 1em;
+  margin: 0;
+  border: 1px solid oklch(80% 0 0);
+  border-radius: 0.5em;
+  list-style: none;
+}
+
+/* swatch and text side by side, vertically centered */
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/* a small colored circle that reads its color from --color */
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
 /* Subgrid keeps headings and images lined up across cards */
 .projects article {
   display: grid;
