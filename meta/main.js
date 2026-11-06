@@ -132,16 +132,37 @@ function renderScatterPlot(data, commits) {
     gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
 
     // dots
+    // radius scale: more lines edited = bigger dot
+    const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
+    const rScale = d3
+        .scaleSqrt() // sqrt so the AREA matches the number of lines (not the radius)
+        .domain([minLines, maxLines])
+        .range([2, 30]);
+
+    // sort biggest first so small dots get drawn on top and are still hoverable
+    const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
+
     const dots = svg.append('g').attr('class', 'dots');
 
     dots
         .selectAll('circle')
-        .data(commits)
+        .data(sortedCommits) // use the sorted list now
         .join('circle')
         .attr('cx', (d) => xScale(d.datetime))
         .attr('cy', (d) => yScale(d.hourFrac))
-        .attr('r', 5)
-        .attr('fill', 'steelblue');
+        .attr('r', (d) => rScale(d.totalLines)) // size from the scale instead of 5
+        .attr('fill', 'steelblue')
+        .style('fill-opacity', 0.7) // see through so overlapping dots show
+        .on('mouseenter', (event, commit) => {
+            d3.select(event.currentTarget).style('fill-opacity', 1); // solid when hovered
+            renderTooltipContent(commit);
+            updateTooltipVisibility(true);
+            updateTooltipPosition(event);
+        })
+        .on('mouseleave', (event) => {
+            d3.select(event.currentTarget).style('fill-opacity', 0.7); // back to see through
+            updateTooltipVisibility(false);
+        });
 
     // axes
     const xAxis = d3.axisBottom(xScale);
@@ -160,6 +181,35 @@ function renderScatterPlot(data, commits) {
         .append('g')
         .attr('transform', `translate(${usableArea.left}, 0)`)
         .call(yAxis);
+}
+
+function renderTooltipContent(commit) {
+    const link = document.getElementById('commit-link');
+    const date = document.getElementById('commit-date');
+    const time = document.getElementById('commit-time');
+    const author = document.getElementById('commit-author');
+    const lines = document.getElementById('commit-lines');
+
+    if (Object.keys(commit).length === 0) return; // nothing to show
+
+    link.href = commit.url;
+    link.textContent = commit.id;
+    date.textContent = commit.datetime?.toLocaleString('en', { dateStyle: 'full' });
+    time.textContent = commit.datetime?.toLocaleString('en', { timeStyle: 'short' });
+    author.textContent = commit.author;
+    lines.textContent = commit.totalLines;
+}
+
+function updateTooltipVisibility(isVisible) {
+    const tooltip = document.getElementById('commit-tooltip');
+    tooltip.hidden = !isVisible;
+}
+
+function updateTooltipPosition(event) {
+    const tooltip = document.getElementById('commit-tooltip');
+    // clientX/Y = where the mouse is on the screen
+    tooltip.style.left = `${event.clientX}px`;
+    tooltip.style.top = `${event.clientY}px`;
 }
 
 let data = await loadData();
