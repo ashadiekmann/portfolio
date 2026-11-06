@@ -280,3 +280,25 @@ article header a {
   font-size: 2em;
   font-weight: bold;
 }
+
+/* meta page stats */
+dl.stats {
+  display: grid;
+  grid-auto-flow: column; /* each dt/dd pair becomes its own column */
+  grid-template-rows: auto auto;
+  text-align: center;
+}
+
+dl.stats dt {
+  grid-row: 1;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+dl.stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: bold;
+}
