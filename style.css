@@ -302,3 +302,13 @@ dl.stats dd {
   font-size: 1.6em;
   font-weight: bold;
 }
+
+/* faint gridlines */
+.gridlines .tick line {
+  stroke: currentColor; /* works in light and dark mode */
+  stroke-opacity: 0.15;
+}
+
+.gridlines .domain {
+  display: none; /* hides the extra vertical line */
+}
