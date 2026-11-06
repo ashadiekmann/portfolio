@@ -368,3 +368,25 @@ dl.info dd {
   padding: 0.75em 1em;
   font-size: 90%;
 }
+
+/* brush rectangle with moving dashed border */
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+    /* 5 + 3, one full dash cycle */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: currentColor;
+  /* works in dark mode */
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+/* dots inside the brush */
+circle.selected {
+  fill: #ff6b6b;
+}
