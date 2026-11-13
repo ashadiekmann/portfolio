@@ -30,7 +30,7 @@
   {
     "title": "When the Lights Go Out: U.S. Power Outage Analysis",
     "year": 2026,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://ashadiekmann.github.io/portfolio/images/power-outage.png",
     "description": "DSC 80 project. Cleaned and analyzed U.S. power outage data with pandas, and built interactive Plotly visualizations published on GitHub Pages.",
     "url": "https://ashadiekmann.github.io/power-outage-analysis/"
   },
