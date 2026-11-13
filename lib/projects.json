@@ -1,4 +1,11 @@
 [
+    {
+    "title": "Bikewatching: Boston Bike Traffic Map",
+    "year": 2026,
+    "image": "https://ashadiekmann.github.io/portfolio/images/bikewatching.png",
+    "description": "Built an interactive Mapbox + D3 map of about 260,000 Bluebikes trips from March 2024, with bike lanes, stations sized by traffic, a time-of-day filter, and colors showing whether riders mostly arrive or depart.",
+    "url": "https://ashadiekmann.github.io/bikewatching/"
+  },
   {
     "title": "Lab 4: Dynamic Projects & GitHub Stats",
     "year": 2026,
