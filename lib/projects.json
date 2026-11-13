@@ -16,14 +16,14 @@
   {
     "title": "Lab 6: Visualizing Quantitative Data with D3",
     "year": 2026,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://ashadiekmann.github.io/portfolio/images/lab6.png",
     "description": "Built a Meta page that analyzes the code behind this website: summary stats, a scatterplot of commits by time of day sized by lines edited, hover tooltips, and brushing to see the language breakdown of selected commits.",
     "url": "https://ashadiekmann.github.io/portfolio/meta/"
   },
   {
     "title": "Lab 5: Visualizing Categorical Data with D3",
     "year": 2026,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://ashadiekmann.github.io/portfolio/images/lab5.png",
     "description": "Added a pie chart and legend of my projects by year, with a search bar and clickable slices that filter the project list together.",
     "url": "https://ashadiekmann.github.io/portfolio/projects/"
   },
@@ -37,35 +37,35 @@
   {
     "title": "Lab 4: Dynamic Projects & GitHub Stats",
     "year": 2026,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://ashadiekmann.github.io/portfolio/images/lab4.png",
     "description": "Loaded my project list from a JSON file with reusable JavaScript functions, and displayed live data from the GitHub API on my home page.",
     "url": "https://ashadiekmann.github.io/portfolio/"
   },
   {
     "title": "Lab 3: Interactive Navigation & Theme Switcher",
     "year": 2026,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://ashadiekmann.github.io/portfolio/images/lab3.png",
     "description": "Used JavaScript to build an automatic navigation menu, a light/dark theme switcher that remembers your choice, and a working contact form.",
     "url": "https://ashadiekmann.github.io/portfolio/contact/"
   },
   {
     "title": "Lab 2: Styling My Portfolio with CSS",
     "year": 2026,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://ashadiekmann.github.io/portfolio/images/lab2.png",
     "description": "Designed the layout and look of my portfolio site with CSS, including a projects grid and a styled navigation bar.",
     "url": "https://ashadiekmann.github.io/portfolio/"
   },
   {
     "title": "Lab 1: Building My Personal Site",
     "year": 2026,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://ashadiekmann.github.io/portfolio/images/lab1.png",
     "description": "Created the HTML structure for my personal website and portfolio, and published it with GitHub Pages.",
     "url": "https://ashadiekmann.github.io/portfolio/"
   },
   {
     "title": "Demographic Factors in Migrant Child Detention",
     "year": 2025,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "image": "https://ashadiekmann.github.io/portfolio/images/cogs9.png",
     "description": "COGS 9 project. Designed the data plan and statistical models (A/B testing, classification) with a five-person team, and wrote the discussion on bias and fairness."
   }
 ]

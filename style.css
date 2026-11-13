@@ -401,6 +401,6 @@ circle.selected {
   height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  object-position: top;
+  object-position: top left;
   border-radius: 6px;
 }
