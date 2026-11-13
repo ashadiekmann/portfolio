@@ -390,3 +390,17 @@ dl.info dd {
 circle.selected {
   fill: #ff6b6b;
 }
+
+/* keep project images inside their cards */
+.projects article {
+  min-width: 0;
+}
+
+.projects img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+}
