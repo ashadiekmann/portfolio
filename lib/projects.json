@@ -1,71 +1,42 @@
 [
   {
-    "title": "Lab 7: Bikewatching, a Boston Bike Traffic Map",
+    "title": "UC San Diego Surface Lot Parking Dashboard",
     "year": 2026,
-    "image": "https://ashadiekmann.github.io/portfolio/images/bikewatching.png",
-    "description": "Built an interactive Mapbox + D3 map of about 260,000 Bluebikes trips from March 2024, with bike lanes, stations sized by traffic, a time-of-day filter, and colors showing whether riders mostly arrive or depart.",
-    "url": "https://ashadiekmann.github.io/bikewatching/"
+    "image": "https://ashadiekmann.github.io/portfolio/images/arcgis.jpg",
+    "description": "Built for UC San Diego Transportation Services and highlighted to the Vice Chancellor. With my team, mapped every surface-lot parking space on campus in ArcGIS, then designed an interactive dashboard that breaks down all 12,718 spaces by area, lot, permit type, and time limit to support leadership decisions."
   },
   {
-    "title": "Project 1: Gram for Gram, the Sugar in 'Better-for-You' Foods",
+    "title": "Gram for Gram: The Sugar in 'Better-for-You' Foods",
     "year": 2026,
     "image": "https://ashadiekmann.github.io/portfolio/images/sugar-drips.png",
-    "description": "Won the class Project 1 award. A persuasive matplotlib chart built from GroceryDB showing that fruit bars and granola bars have more sugar per 100 g than cookies, cakes, and ice cream, with each aisle drawn as a dripping icing drop.",
+    "description": "Winner of the DSC 106 Creativity Award, chosen from a large class and showcased as a standout project. A persuasive visualization built from cleaned GroceryDB data revealing that 'healthy' fruit and granola bars pack more sugar per 100 g than cookies, cakes, and ice cream, with each grocery aisle drawn as a dripping drop of icing.",
     "url": "https://ashadiekmann.github.io/portfolio/images/sugar-drips.png"
   },
   {
-    "title": "Lab 6: Visualizing Quantitative Data with D3",
+    "title": "Bikewatching: Boston Bike Traffic Map",
     "year": 2026,
-    "image": "https://ashadiekmann.github.io/portfolio/images/lab6.png",
-    "description": "Built a Meta page that analyzes the code behind this website: summary stats, a scatterplot of commits by time of day sized by lines edited, hover tooltips, and brushing to see the language breakdown of selected commits.",
-    "url": "https://ashadiekmann.github.io/portfolio/meta/"
+    "image": "https://ashadiekmann.github.io/portfolio/images/bikewatching.png",
+    "description": "Interactive Mapbox + D3 map of about 260,000 Bluebikes trips, with stations sized by traffic, colors showing arrivals vs. departures, and a time-of-day filter kept fast by pre-sorting trips into per-minute buckets.",
+    "url": "https://ashadiekmann.github.io/bikewatching/"
   },
   {
-    "title": "Lab 5: Visualizing Categorical Data with D3",
+    "title": "This Website: A Portfolio That Visualizes Itself",
     "year": 2026,
-    "image": "https://ashadiekmann.github.io/portfolio/images/lab5.png",
-    "description": "Added a pie chart and legend of my projects by year, with a search bar and clickable slices that filter the project list together.",
-    "url": "https://ashadiekmann.github.io/portfolio/projects/"
+    "image": "https://ashadiekmann.github.io/portfolio/images/lab6.png",
+    "description": "Designed and coded from scratch in HTML, CSS, and JavaScript: a data-driven projects page with a D3 pie chart filter and search, live GitHub stats, a light/dark theme, and a scrollytelling page that animates the history of this site's own code.",
+    "url": "https://ashadiekmann.github.io/portfolio/meta/"
   },
   {
     "title": "When the Lights Go Out: U.S. Power Outage Analysis",
     "year": 2026,
     "image": "https://ashadiekmann.github.io/portfolio/images/power-outage.png",
-    "description": "DSC 80 project. Cleaned and analyzed U.S. power outage data with pandas, and built interactive Plotly visualizations published on GitHub Pages.",
+    "description": "Cleaned and analyzed U.S. power outage data with pandas to explore what drives outage severity, and published the findings with interactive Plotly visualizations.",
     "url": "https://ashadiekmann.github.io/power-outage-analysis/"
-  },
-  {
-    "title": "Lab 4: Dynamic Projects & GitHub Stats",
-    "year": 2026,
-    "image": "https://ashadiekmann.github.io/portfolio/images/lab4.png",
-    "description": "Loaded my project list from a JSON file with reusable JavaScript functions, and displayed live data from the GitHub API on my home page.",
-    "url": "https://ashadiekmann.github.io/portfolio/"
-  },
-  {
-    "title": "Lab 3: Interactive Navigation & Theme Switcher",
-    "year": 2026,
-    "image": "https://ashadiekmann.github.io/portfolio/images/lab3.png",
-    "description": "Used JavaScript to build an automatic navigation menu, a light/dark theme switcher that remembers your choice, and a working contact form.",
-    "url": "https://ashadiekmann.github.io/portfolio/contact/"
-  },
-  {
-    "title": "Lab 2: Styling My Portfolio with CSS",
-    "year": 2026,
-    "image": "https://ashadiekmann.github.io/portfolio/images/lab2.png",
-    "description": "Designed the layout and look of my portfolio site with CSS, including a projects grid and a styled navigation bar.",
-    "url": "https://ashadiekmann.github.io/portfolio/"
-  },
-  {
-    "title": "Lab 1: Building My Personal Site",
-    "year": 2026,
-    "image": "https://ashadiekmann.github.io/portfolio/images/lab1.png",
-    "description": "Created the HTML structure for my personal website and portfolio, and published it with GitHub Pages.",
-    "url": "https://ashadiekmann.github.io/portfolio/"
   },
   {
     "title": "Demographic Factors in Migrant Child Detention",
     "year": 2025,
     "image": "https://ashadiekmann.github.io/portfolio/images/cogs9.png",
-    "description": "COGS 9 project. Designed the data plan and statistical models (A/B testing, classification) with a five-person team, and wrote the discussion on bias and fairness."
+    "description": "Five-person research project. Designed the data plan and statistical models (A/B testing, classification) and wrote the discussion on bias and fairness."
   }
 ]
