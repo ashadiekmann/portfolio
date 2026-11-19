@@ -404,3 +404,123 @@ circle.selected {
   object-position: top left;
   border-radius: 6px;
 }
+
+/* lab 8 time slider */
+.time-filter {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.time-filter input {
+  flex: 1;
+}
+
+.time-filter time {
+  min-width: 14em;
+  text-align: right;
+}
+
+/* file dots (unit vis) */
+#files {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5em 1em;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+    margin: 0;
+
+    code {
+      font-size: 85%;
+    }
+  }
+
+  dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+  }
+
+  small {
+    display: block;
+    font-size: 75%;
+    opacity: 0.7;
+  }
+}
+
+/* one dot = one line of code */
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);
+  border-radius: 50%;
+  transition: scale 300ms;
+
+  @starting-style {
+    scale: 0;
+  }
+}
+
+/* scrollytelling: text on one side, sticky chart on the other */
+#scrolly-1,
+#scrolly-2 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story,
+#files-story {
+  position: relative;
+}
+
+#scatter-plot,
+#files-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  /* without this it stretches to the full height and wont stick */
+  align-self: start;
+}
+
+#scatter-plot {
+  height: 50vh;
+}
+
+/* smaller story text, closer together like the demo */
+#scatter-story,
+#files-story {
+  font-size: 90%;
+}
+
+.step {
+  padding-bottom: 1.5em;
+}
+
+/* extra room after the last step so it can still scroll up to the middle */
+.step:last-child {
+  padding-bottom: 50vh;
+}
+
+/* scrolling does the same job now, so hide the slider bar but keep the date */
+.time-filter input {
+  display: none;
+}
