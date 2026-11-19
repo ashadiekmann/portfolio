@@ -9,7 +9,17 @@
 </head>
 <body>
 
-    <h1>Resume</h1>
+    <header class="resume-header">
+        <div>
+            <h1>Asha Diekmann</h1>
+            <p class="subtitle">Data Science · Machine Learning &amp; AI · UC San Diego · San Diego, CA</p>
+        </div>
+        <div class="buttons">
+            <a class="button" href="mailto:adiekmann@ucsd.edu">Email</a>
+            <a class="button" href="https://github.com/ashadiekmann" target="_blank">GitHub</a>
+            <a class="button primary" href="../projects/">Projects</a>
+        </div>
+    </header>
 
     <section>
         <h2>Education</h2>
@@ -19,82 +29,134 @@
                 <p><time datetime="2024-09">Sep 2024</time> – <time datetime="2028-06">June 2028</time> (expected)</p>
             </header>
             <p>B.S. in Data Science, Specialization in Machine Learning &amp; Artificial Intelligence<br>
-            Minor in Cognitive Science</p>
-            <p><strong>Relevant Coursework:</strong> DSC 20, DSC 30, DSC 40A, DSC 80, DSC 106, MATH 18, COGS 9</p>
+            Minor in Cognitive Science · GPA: 3.56</p>
+            <p><strong>Relevant Coursework:</strong> Data Visualization (DSC 106), Practice of Data Science (DSC 80),
+            Theoretical Foundations of Data Science I &amp; II (DSC 40A/B), Data Structures &amp; Algorithms (DSC 30),
+            Statistical Methods (MATH 183), Linear Algebra (MATH 18), Statistical Analysis (COGS 14B), Introduction to Data Science (COGS 9)</p>
         </article>
     </section>
 
     <section>
         <h2>Experience</h2>
-        <article>
-            <header>
-                <h3>Grader, COGS 9: Introduction to Data Science</h3>
-                <p>UC San Diego · <time datetime="2026-09">Sep 2026</time> – <time datetime="2026-12">Dec 2026</time></p>
-            </header>
-            <ul>
-                <li>Selected as a grader based on strong performance in the course.</li>
-                <li>Grade assignments and exams for an introductory data science course, giving students clear and consistent feedback.</li>
-                <li>Help the instructional team organize Canvas pages and lesson materials.</li>
-            </ul>
-        </article>
-        <article>
-            <header>
-                <h3>Transportation Services Intern, TechOps</h3>
-                <p>UC San Diego Transportation · <time datetime="2026-07">Jul 2026</time> – Present</p>
-            </header>
-            <ul>
-                <li>Built ArcGIS maps and dashboards for Transportation Services; this work was highlighted to the UC San Diego Vice Chancellor.</li>
-                <li>Help maintain the technology and systems behind campus transportation operations.</li>
-                <li>Write and maintain documentation for the team's tools and processes.</li>
-            </ul>
-        </article>
+        <div class="timeline">
+            <article>
+                <header>
+                    <h3>Transportation Services Intern, TechOps</h3>
+                    <p>UC San Diego Transportation · <time datetime="2026-07">Jul 2026</time> – Present</p>
+                </header>
+                <ul>
+                    <li>Designed an interactive parking dashboard using ArcGIS Pro, ArcGIS Online, and ArcGIS Dashboards that breaks down all 12,718 campus surface-lot parking spaces by area, lot, permit type, and time limit; highlighted to campus leadership, including the Vice Chancellor.</li>
+                    <li>Mapped every surface-lot parking space on campus with the team, leading GIS documentation, asset configuration, and data mapping to build a campus-wide parking inventory.</li>
+                    <li>Manage data across parking permit and asset management systems, including AIMS, and support system configuration, validation, and quality assurance as campus rolls out new software.</li>
+                    <li>Monitor system performance and develop processes to rapidly identify and fix systems and processes that fall out of tolerance.</li>
+                    <li>Build knowledge-base content for customers and for human and AI service agents; capture, standardize, and train staff on expertise previously held by a few subject matter experts.</li>
+                    <li>Support project and change management, service planning, and micromobility safety initiatives; research strategies from peer organizations and help prepare accreditation, certification, and nomination packages.</li>
+                </ul>
+            </article>
+            <article>
+                <header>
+                    <h3>Grader, COGS 9: Introduction to Data Science</h3>
+                    <p>UC San Diego · <time datetime="2026-09">Sep 2026</time> – Present</p>
+                </header>
+                <ul>
+                    <li>Selected by the instructional team based on top performance in the course (A+).</li>
+                    <li>Grade assignments and exams for over 300 students, delivering clear, consistent, rubric-based feedback.</li>
+                    <li>Support the instructional team in organizing Canvas pages and lesson materials.</li>
+                </ul>
+            </article>
+        </div>
     </section>
 
     <section>
         <h2>Projects</h2>
-        <article>
-            <header>
-                <h3><a href="https://ashadiekmann.github.io/portfolio/images/sugar-drips.png">Gram for Gram: The Sugar in “Better-for-You” Foods</a></h3>
-                <p>DSC 106 · <time datetime="2026">2026</time></p>
-            </header>
-            <p>Designed a persuasive matplotlib visualization from GroceryDB showing that fruit and granola bars have more sugar per 100 g than cookies, cakes, and ice cream. Cleaned duplicate and impossible values. <strong>Won the class Project 1 award.</strong></p>
-        </article>
-        <article>
-            <header>
-                <h3><a href="https://ashadiekmann.github.io/bikewatching/">Bikewatching: Boston Bike Traffic Map</a></h3>
-                <p>DSC 106 · <time datetime="2026">2026</time></p>
-            </header>
-            <p>Built an interactive Mapbox + D3.js map of about 260,000 Bluebikes trips, with a time-of-day filter made fast by pre-sorting trips into per-minute buckets.</p>
-        </article>
-        <article>
-            <header>
-                <h3><a href="https://ashadiekmann.github.io/power-outage-analysis/">When the Lights Go Out: U.S. Power Outage Analysis</a></h3>
-                <p>DSC 80 · <time datetime="2026">2026</time></p>
-            </header>
-            <p>Cleaned and analyzed U.S. power outage data with pandas, and built interactive Plotly visualizations published on GitHub Pages.</p>
-        </article>
-        <article>
-            <header>
-                <h3>Demographic Factors in Migrant Child Detention</h3>
-                <p>COGS 9 · <time datetime="2025">2025</time></p>
-            </header>
-            <p>Designed the data plan and statistical models (A/B testing, classification) with a five-person team, and wrote the discussion on bias and fairness.</p>
-        </article>
+        <div class="timeline">
+            <article>
+                <header>
+                    <h3><a href="https://ashadiekmann.github.io/portfolio/images/sugar-drips.png">Gram for Gram: The Sugar in “Better-for-You” Foods</a></h3>
+                    <p>DSC 106 · <time datetime="2026">2026</time></p>
+                </header>
+                <p><strong>Won the Project 1 award for creativity out of 200+ students.</strong> Designed a persuasive matplotlib visualization from GroceryDB revealing that “healthy” fruit and granola bars contain more sugar per 100 g than cookies, cakes, and ice cream. Cleaned duplicate and impossible values to ensure accurate comparisons.</p>
+            </article>
+            <article>
+                <header>
+                    <h3><a href="https://ashadiekmann.github.io/power-outage-analysis/">When the Lights Go Out: U.S. Power Outage Analysis</a></h3>
+                    <p>DSC 80 · <time datetime="2026">2026</time></p>
+                </header>
+                <p>Analyzed 1,534 major U.S. power outages (2000–2016) to predict how many customers an outage affects. Used permutation tests to study missing data and seasonal effects, built a Random Forest regressor that outperformed a linear baseline, and ran a fairness analysis showing the model performed significantly better on Northeast outages (p = 0.004). Published the analysis with interactive Plotly visualizations.</p>
+            </article>
+            <article>
+                <header>
+                    <h3><a href="https://ashadiekmann.github.io/bikewatching/">Bikewatching: Boston Bike Traffic Map</a></h3>
+                    <p>DSC 106 · <time datetime="2026">2026</time></p>
+                </header>
+                <p>Built an interactive Mapbox + D3.js map of about 260,000 Bluebikes trips, with stations sized by traffic and a time-of-day filter kept fast by pre-sorting trips into per-minute buckets.</p>
+            </article>
+            <article>
+                <header>
+                    <h3><a href="https://ashadiekmann.github.io/portfolio/meta/">Personal Portfolio Website</a></h3>
+                    <p>DSC 106 · <time datetime="2026">2026</time></p>
+                </header>
+                <p>Designed and coded this site from scratch in HTML, CSS, and JavaScript, including a D3 pie chart filter with search, live GitHub API data, and a scrollytelling page that animates the history of the site's own code.</p>
+            </article>
+            <article>
+                <header>
+                    <h3>Demographic Factors in Migrant Child Detention</h3>
+                    <p>COGS 9 · <time datetime="2025">2025</time></p>
+                </header>
+                <p>Designed the data plan and statistical models (A/B testing, classification) with a five-person team, and wrote the discussion on bias and fairness.</p>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <h2>Awards &amp; Recognition</h2>
+        <ul class="awards">
+            <li>
+                <strong>DSC 106 Project 1 Award for Creativity</strong>
+                <span>Selected from 200+ students · 2026</span>
+            </li>
+            <li>
+                <strong>Provost Honors</strong>
+                <span>Spring 2025 · Winter 2026 · Spring 2026</span>
+            </li>
+        </ul>
     </section>
 
     <section>
         <h2>Skills</h2>
-        <ul class="skills">
-            <li>Python</li>
-            <li>Java</li>
-            <li>JavaScript, HTML &amp; CSS</li>
-            <li>D3.js</li>
-            <li>pandas, matplotlib &amp; Plotly</li>
-            <li>ArcGIS</li>
-            <li>Data cleaning and exploratory data analysis</li>
-            <li>Statistical modeling</li>
-            <li>Data visualization</li>
-        </ul>
+        <div class="skill-groups">
+            <h3>Languages</h3>
+            <ul class="skills">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML &amp; CSS</li>
+                <li>Java</li>
+            </ul>
+            <h3>Tools &amp; Libraries</h3>
+            <ul class="skills">
+                <li>ArcGIS Pro</li>
+                <li>ArcGIS Online</li>
+                <li>ArcGIS Dashboards</li>
+                <li>pandas</li>
+                <li>scikit-learn</li>
+                <li>matplotlib</li>
+                <li>Plotly</li>
+                <li>D3.js</li>
+                <li>Mapbox</li>
+                <li>Git &amp; GitHub</li>
+                <li>AIMS</li>
+            </ul>
+            <h3>Methods</h3>
+            <ul class="skills">
+                <li>Data cleaning &amp; exploratory analysis</li>
+                <li>Hypothesis &amp; permutation testing</li>
+                <li>Regression &amp; classification</li>
+                <li>Data visualization</li>
+                <li>GIS mapping &amp; data mapping</li>
+                <li>Dashboard design</li>
+                <li>System validation &amp; QA</li>
+            </ul>
+        </div>
     </section>
 </body>
 </html>

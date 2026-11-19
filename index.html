@@ -4,22 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asha Diekmann: Personal site and portfolio</title>
+    <title>Asha Diekmann | Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="global.js"></script>
     <script type="module" src="index.js"></script>
 </head>
 
 <body>
-    <h1>Asha Diekmann</h1>
-    <img src="images/me.jpeg" alt="Photo of Asha Diekmann" width="300">
-    <p>Hi! I'm a Data Science student at UC San Diego, minoring in Cognitive Science. I'm especially interested in the
-        development of AI.</p>
-    <div id="profile-stats"></div>
-    <h2>Latest Projects</h2>
+    <section class="hero">
+        <img src="images/me.jpeg" alt="Photo of Asha Diekmann" class="hero-photo">
+        <div class="hero-text">
+            <p class="eyebrow">Data Science · UC San Diego</p>
+            <h1>Asha Diekmann</h1>
+            <p class="tagline">I turn complex data into clear, interactive stories.</p>
+            <ul class="tools">
+                <li>Python</li>
+                <li>pandas</li>
+                <li>D3.js</li>
+                <li>ArcGIS</li>
+                <li>JavaScript</li>
+                <li>Plotly</li>
+            </ul>
+            <p>
+                I'm a Data Science student at UC San Diego specializing in Machine Learning &amp; AI, with a minor in
+                Cognitive Science. Originally from Redlands, California, I'm fascinated by how people understand
+                information, from how AI is changing that to how ArcGIS turns location data into maps people can
+                act on. Outside of class, I work with UC San Diego Transportation Services on the data and systems
+                behind campus operations, and I'm a grader for an intro data science course.
+            </p>
+            <p class="open-to">Open to internships in data science, data visualization, and GIS &amp; analytics.</p>
+            <div class="buttons">
+                <a class="button primary" href="projects/">View my work</a>
+                <a class="button" href="resume/">Resume</a>
+                <a class="button" href="https://github.com/ashadiekmann" target="_blank">GitHub</a>
+                <a class="button" href="mailto:adiekmann@ucsd.edu">Email me</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="spotlight">
+        <img src="images/arcgis.jpg" alt="UC San Diego surface lot parking dashboard built in ArcGIS">
+        <div>
+            <span class="badge">Featured work</span>
+            <h2>UC San Diego Parking Dashboard</h2>
+            <p>
+                With my team, I mapped every surface-lot parking space on campus in ArcGIS, then built an interactive
+                dashboard for Transportation Services that breaks down all 12,718 spaces by area, lot, permit type,
+                and time limit. It was highlighted to campus leadership, including the Vice Chancellor.
+            </p>
+            <a href="projects/" class="more-link">See all projects →</a>
+        </div>
+    </section>
+
+    <h2>More Projects</h2>
     <div class="projects">
         <!-- Dynamically added content will appear here -->
     </div>
+
+    <div id="profile-stats"></div>
 </body>
 
 </html>

@@ -3,13 +3,13 @@
     "title": "UC San Diego Surface Lot Parking Dashboard",
     "year": 2026,
     "image": "https://ashadiekmann.github.io/portfolio/images/arcgis.jpg",
-    "description": "Built for UC San Diego Transportation Services and highlighted to the Vice Chancellor. With my team, mapped every surface-lot parking space on campus in ArcGIS, then designed an interactive dashboard that breaks down all 12,718 spaces by area, lot, permit type, and time limit to support leadership decisions."
+    "description": "Built for UC San Diego Transportation Services and highlighted to campus leadership, including the Vice Chancellor. With my team, mapped every surface-lot parking space on campus, then used ArcGIS Pro, ArcGIS Online, and ArcGIS Dashboards to design an interactive dashboard that breaks down all 12,718 spaces by area, lot, permit type, and time limit."
   },
   {
     "title": "Gram for Gram: The Sugar in 'Better-for-You' Foods",
     "year": 2026,
     "image": "https://ashadiekmann.github.io/portfolio/images/sugar-drips.png",
-    "description": "Winner of the DSC 106 Creativity Award, chosen from a large class and showcased as a standout project. A persuasive visualization built from cleaned GroceryDB data revealing that 'healthy' fruit and granola bars pack more sugar per 100 g than cookies, cakes, and ice cream, with each grocery aisle drawn as a dripping drop of icing.",
+    "description": "Won the DSC 106 Project 1 award for creativity out of 200+ students. A persuasive visualization built from cleaned GroceryDB data revealing that 'healthy' fruit and granola bars pack more sugar per 100 g than cookies, cakes, and ice cream, with each grocery aisle drawn as a dripping drop of icing.",
     "url": "https://ashadiekmann.github.io/portfolio/images/sugar-drips.png"
   },
   {
@@ -30,7 +30,7 @@
     "title": "When the Lights Go Out: U.S. Power Outage Analysis",
     "year": 2026,
     "image": "https://ashadiekmann.github.io/portfolio/images/power-outage.png",
-    "description": "Cleaned and analyzed U.S. power outage data with pandas to explore what drives outage severity, and published the findings with interactive Plotly visualizations.",
+    "description": "Analyzed 1,534 major U.S. power outages (2000–2016) to predict how many customers an outage affects. Ran permutation tests on missing data and seasonality, built a Random Forest model that beat a linear baseline, and tested it for fairness across regions.",
     "url": "https://ashadiekmann.github.io/power-outage-analysis/"
   },
   {

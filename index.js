@@ -1,16 +1,17 @@
 import { fetchJSON, renderProjects, fetchGitHubData } from './global.js';
 
 const projects = await fetchJSON('./lib/projects.json');
-const latestProjects = projects.slice(0, 3);
+// the dashboard (project 0) is already in the spotlight, so show the next 3
+const moreProjects = projects.slice(1, 4);
 
 const projectsContainer = document.querySelector('.projects');
 
-renderProjects(latestProjects, projectsContainer, 'h2');
+renderProjects(moreProjects, projectsContainer, 'h2');
 
 const githubData = await fetchGitHubData('ashadiekmann');
 const profileStats = document.querySelector('#profile-stats');
 
-if (profileStats) {
+if (profileStats && githubData) {
   profileStats.innerHTML = `
     <h2>My GitHub Stats</h2>
     <dl>

@@ -3,9 +3,9 @@ html {
   color-scheme: light dark;
 }
 
-/* Accent color used across the site (pastel pink) */
+/* Accent color used across the site (professional blue) */
 :root {
-  --color-accent: oklch(80% 35% 350);
+  --color-accent: oklch(55% 0.14 250);
   accent-color: var(--color-accent);
 }
 
@@ -318,10 +318,15 @@ dl.stats dd {
 
 /* dots grow when hovered */
 circle {
-  transition: 200ms;
+  /* bigger dots take longer so they all grow at the same speed */
+  transition: all 200ms, r calc(var(--r) * 100ms);
   transform-origin: center;
   transform-box: fill-box;
   /* without this it scales from the top left corner */
+
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -523,4 +528,296 @@ circle.selected {
 /* scrolling does the same job now, so hide the slider bar but keep the date */
 .time-filter input {
   display: none;
+}
+
+/* ---------- home page intro ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  margin-block: 3em 4em;
+}
+
+/* round photo with a pink ring */
+.hero-photo {
+  width: 14em;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 50%;
+  border: 4px solid var(--color-accent);
+  flex-shrink: 0;
+}
+
+.hero h1 {
+  font-size: 350%;
+  margin: 0.1em 0;
+}
+
+/* small label above the name */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 85%;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 150%;
+  font-weight: 600;
+  margin: 0.3em 0 0.6em;
+}
+
+.open-to {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* pill-shaped buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  margin-top: 1.5em;
+}
+
+.button {
+  padding: 0.6em 1.2em;
+  border: 2px solid var(--color-accent);
+  border-radius: 2em;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 200ms;
+}
+
+.button:hover {
+  background-color: color-mix(in oklch, var(--color-accent), canvas 80%);
+}
+
+/* the main button is filled in */
+.button.primary {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* on phones, stack the photo above the text */
+@media (max-width: 40em) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+/* ---------- tool tags under the headline ---------- */
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+.tools li {
+  font-size: 85%;
+  padding: 0.2em 0.8em;
+  border-radius: 1em;
+  border: 1px solid color-mix(in oklch, var(--color-accent), canvas 60%);
+}
+
+/* ---------- featured work spotlight ---------- */
+.spotlight {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2em;
+  align-items: center;
+  padding: 1.5em;
+  margin-block: 0 3em;
+  border-radius: 1em;
+  border: 1px solid color-mix(in oklch, var(--color-accent), canvas 70%);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 95%);
+}
+
+.spotlight img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/* undo the resume-page underline that all section headings get */
+.spotlight h2 {
+  border: none;
+  padding: 0;
+  margin: 0.4em 0;
+  font-size: 170%;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 80%;
+  padding: 0.2em 0.8em;
+  border-radius: 1em;
+  background-color: color-mix(in oklch, var(--color-accent), canvas 80%);
+}
+
+.more-link {
+  color: var(--color-accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+}
+
+/* project titles: dark text with a blue underline instead of default link colors */
+.projects h2 a {
+  color: inherit;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.15em;
+  transition: 200ms;
+}
+
+.projects h2 a:hover {
+  color: var(--color-accent);
+}
+
+.projects h2 {
+  font-size: 140%;
+}
+
+/* on phones: stack the spotlight and center the tags */
+@media (max-width: 40em) {
+  .spotlight {
+    grid-template-columns: 1fr;
+  }
+
+  .tools {
+    justify-content: center;
+  }
+}
+
+/* ---------- resume contact line ---------- */
+.contact {
+  margin-top: -1em;
+  opacity: 0.8;
+}
+
+.contact a {
+  color: inherit;
+  text-decoration-color: var(--color-accent);
+}
+
+/* ---------- resume page ---------- */
+
+/* name on the left, contact buttons on the right */
+.resume-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.resume-header h1 {
+  font-size: 300%;
+  margin: 0;
+}
+
+.resume-header .subtitle {
+  margin: 0.3em 0 0;
+  opacity: 0.75;
+}
+
+/* smaller pill buttons in the header */
+.resume-header .buttons {
+  margin-top: 0;
+}
+
+.resume-header .button {
+  font-size: 90%;
+  padding: 0.4em 1em;
+}
+
+/* timeline: a thin line down the left with a dot for each entry */
+.timeline {
+  margin-left: 0.4em;
+  padding-left: 1.5em;
+  border-left: 2px solid color-mix(in oklch, var(--color-accent), canvas 60%);
+}
+
+.timeline article {
+  position: relative;
+}
+
+.timeline article::before {
+  content: "";
+  position: absolute;
+  /* centers the dot on the line */
+  left: calc(-1.5em - 7px);
+  top: 0.3em;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+/* award cards */
+.awards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+}
+
+.awards li {
+  padding: 0.8em 1em;
+  border-radius: 0.6em;
+  background-color: color-mix(in oklch, var(--color-accent), canvas 88%);
+}
+
+.awards strong {
+  display: block;
+}
+
+.awards span {
+  font-size: 90%;
+  opacity: 0.8;
+}
+
+/* skills: label on the left, chips on the right */
+.skill-groups {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.75em 1.5em;
+  align-items: start;
+}
+
+.skill-groups h3 {
+  margin: 0;
+  padding-top: 0.25em;
+  font-size: 100%;
+  opacity: 0.75;
+}
+
+.skill-groups .skills {
+  margin: 0;
+}
+
+/* on phones, stack the skill labels above their chips */
+@media (max-width: 40em) {
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
 }
